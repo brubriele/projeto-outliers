@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Outliers{lAB}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200|Libre+Baskerville:400i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+
+</head>
+
+<body>
+
+    <nav>
+        <img src="img/Logo.png" alt="logo" />
+        <ul class="listaMenu">
+            <li class="menu"><a href="index.html">Home</a></li>
+            <div class="dropdown">
+                <a href="javascript:void(0)" onclick="myFunction()" class="dropbtn">Dados</a>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="graficos.html#dash2">Gênero</a>
+                    <a href="graficos.html#dash5">Gerações</a>
+                    <a href="graficos.html#dash8">Renda</a>
+                </div>
+            </div>
+            <li class="menu"><a href="recicladados.html">ReciclaDados</a></li>
+            <li class="menu"><a href="sobre.html">Sobre</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section class="esquerda">
+            <div class="ballLogo"></div>
+            <h1>Out<span>l</span>iers<br>{<span>l</span>AB}</h1>
+        </section>
+
+        <section class="centro">
+            <div class="ballBack">
+                <h2>Coleção Eleições <span>2018</span></h2>
+            </div>
+
+        </section>
+
+        <section class="trioBall">
+            <div class="Gen">
+                <div class="ballGen" onmouseover="mOverGen(this)" onmouseout="mOutGen(this)">LGBTI</div>
+                <div class="trioGen">
+                    <div class="ballA">
+                        <a href="graficos.html#dash2">
+                            <h5>Onde votam?</h5>
+                        </a>
+                    </div>
+
+                    <div class="ballB">
+                        <a href="graficos.html#dash3">
+                            <h5>Como votam?</h5>
+                        </a>
+
+                    </div>
+
+                    <div class="ballC">
+                        <a href="graficos.html#dash4">
+                            <h5>Em quem votam?</h5>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="Gera">
+                <div class="ballGera" onmouseover="mOverGera(this)" onmouseout="mOutGera(this)">Gerações</div>
+                <div class="trioGera">
+                    <div class="ballD">
+                        <a href="graficos.html#dash5">
+                            <h5>O que pensam?</h5>
+                        </a>
+                    </div>
+
+                    <div class="ballE">
+                        <a href="graficos.html#dash6">
+                            <h5>Quem escolhem?</h5>
+                        </a>
+                    </div>
+
+                    <div class="ballF">
+                        <a href="graficos.html#dash7">
+                            <h5>Quem rejeitam?</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Renda">
+                <div class="ballRenda" onmouseover="mOverRenda(this)" onmouseout="mOutRenda(this)">Renda</div>
+                <div class="trioRenda">
+                    <div class="ballG">
+                        <a href="graficos.html#dash8">
+                            <h5>O que distingue?</h5>
+                        </a>
+                    </div>
+
+                    <div class="ballH"><a href="graficos.html#dash9"></a>
+                        <h5>Qual o alcance?</h5>
+                    </div>
+
+                    <div class="ballI">
+                        <a href="graficos.html#dash10">
+                            <h5>Quem concentra?</h5>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </section>
+    </div>
+
+    <footer>
+        <div class="logoMsg">
+            <img src="img/Logo.png" alt="logo" />
+            <p>Plataforma de coleta e<br> modelagem de pontos fora da curva. </p>
+        </div>
+
+        <div class="contato">
+
+            <p>Sobre</p>
+            <p>Apoie a iniciativa</p>
+            <p><strong>Assine para receber novidades:</strong></p>
+            <form action="#" method="POST">
+                <input type="text" placeholder="Seu e-mail">
+                <input class="btnSubmit" type="submit" value="enviar">
+            </form>
+        </div>
+
+        <div class="social">
+            <a href="#" target="blank_"><img src="img/logo_face.png" alt="logo_face"></a>
+            <a href="#" target="blank_"><img src="img/logo_twitter.png" alt="logo_twitter"></a>
+        </div>
+
+
+
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Outliers{lAB}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200|Libre+Baskerville:400i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+
+</head>
+
+<body>
+    <nav>
+        <img src="img/Logo.png" alt="logo" />
+        <ul class="listaMenu">
+            <li class="menu"><a href="index.html">Home</a></li>
+            <div class="dropdown">
+                <a href="javascript:void(0)" onclick="myFunction()" class="dropbtn">Dados</a>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="graficos.html#dash2">Gênero</a>
+                    <a href="graficos.html#dash5">Gerações</a>
+                    <a href="graficos.html#dash8">Renda</a>
+                </div>
+            </div>
+            <li class="menu"><a href="recicladados.html">ReciclaDados</a></li>
+            <li class="menu"><a href="sobre.html">Sobre</a></li>
+        </ul>
+    </nav>
+
+    <div class="containerSobre">
+
+        <section>
+            <h2>Sobre</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur quibusdam mollitia dolorum dolore
+                amet dolores minima, et corporis omnis non voluptate itaque iusto ex animi! Reiciendis quos corrupti
+                alias libero!</p>
+        </section>
+        <aside>
+            <h2>Contato</h2>
+            <form action="https://www.google.com.br/" method="GET">
+                <section>
+                    <div class="label"><label for="nome">Nome*</label></div>
+                    <div><input class="entrada" style="text" placeholder="Seu nome" name="nome" required></div>
+                </section>
+
+                <section>
+                    <div class="label"><label for="e-mail">E-mail*
+                    </div>
+                    <div><input class="entrada" type="email" placeholder="Seu e-mail" name="e-mail" required></div>
+                </section>
+
+                <section>
+                    <div class="label"><label for="comoEncontrou">Como você nos encontrou?</label>
+                    </div>
+
+                    <div class="lateral">
+                        <div>
+                            <input type="checkbox" name="comoEncontrou" value="findFace">Facebook
+                        </div>
+                        <div>
+                            <input type="checkbox" name="comoEncontrou" value="findTwitter">Twitter
+                        </div>
+                        <div>
+                            <input type="checkbox" name="comoEncontrou" value="findGoogle">Site de busca
+                        </div>
+                </section>
+
+
+                <section>
+                    <div class="label"><label for="genero">Como se identifica?</label>
+                    </div>
+                    <div class="lateral">
+                        <div>
+                            <input type="radio" name="genero" value="masculino">Masculino
+                        </div>
+                        <div>
+                            <input type="radio" name="genero" value="feminino">Feminino
+                        </div>
+                        <div>
+                            <input type="radio" name="genero" value="nao-binario">Não-binário
+                        </div>
+
+                </section>
+
+                <section>
+                    <div class="label">
+                        <label for="idade">Idade</label>
+                    </div>
+                    <div class="lateral">
+                        <div>
+                            <input class="entrada" type="number" name="idade" min="16" max="100">
+                        </div>
+                </section>
+
+                <section>
+                    <div class="label">
+                        <label for="assunto">Sobre o que você quer falar?*</label>
+                    </div>
+                    <div class="lateral">
+                        <div>
+                            <select class="entrada" name="assunto" required>
+                                <option value="layout">
+                                    Selecione um tópico
+                                </option>
+                                <option value="demanda">
+                                    Sugestão ou demanda de temas
+                                </option>
+                                <option value="errata">
+                                    Vocês erraram
+                                </option>
+                                <option value="outro">
+                                    Outro assunto, deixa eu explicar!
+                                </option>
+                            </select>
+                        </div>
+                </section>
+
+
+
+                <section>
+                    <div class="label">
+                        <label for="comentario">Comentário</label>
+                    </div>
+                    <div class="lateral">
+                        <div>
+                            <textarea class="entrada" name="comentário" cols="30" rows="10" required></textarea>
+                        </div>
+                </section>
+
+                <section>
+                    <div></div>
+                    <div class="botoes">
+                        <div>
+                            <input class="reset" type="reset" value="Apagar">
+                        </div>
+                        <div>
+                            <input class="submit" type="submit" value="Enviar!">
+                        </div>
+                </section>
+            </form>
+            <p>*Perguntas obrigatória</p>
+        </aside>
+
+
+    </div>
+
+    <footer>
+        <div class="logoMsg">
+            <img src="img/Logo.png" alt="logo" />
+            <p>Plataforma de coleta e<br> modelagem de pontos fora da curva. </p>
+        </div>
+
+        <div class="contato">
+
+            <p>Sobre</p>
+            <p>Apoie a iniciativa</p>
+            <p><strong>Assine para receber novidades:</strong></p>
+            <form action="#" method="POST">
+                <input type="text" placeholder="Seu e-mail">
+                <input class="btn btn-primary btn-lg" type="submit" value="enviar">
+            </form>
+        </div>
+
+        <div class="social">
+            <a href="#" target="blank_"><img src="img/logo_face.png" alt="logo_face"></a>
+            <a href="#" target="blank_"><img src="img/logo_twitter.png" alt="logo_twitter"></a>
+        </div>
+
+
+
+
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>

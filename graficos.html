@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Outliers{lAB}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200|Libre+Baskerville:400i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+
+</head>
+
+<body>
+    <nav>
+        <img src="img/Logo.png" alt="logo" />
+        <ul class="listaMenu">
+            <li class="menu"><a href="index.html">Home</a></li>
+            <div class="dropdown">
+                <a href="javascript:void(0)" onclick="myFunction()" class="dropbtn">Dados</a>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="graficos.html#dash2">Gênero</a>
+                    <a href="graficos.html#dash5">Gerações</a>
+                    <a href="graficos.html#dash8">Renda</a>
+                </div>
+            </div>
+            <li class="menu"><a href="recicladados.html">ReciclaDados</a></li>
+            <li class="menu"><a href="sobre.html">Sobre</a></li>
+        </ul>
+    </nav>
+
+
+
+
+
+    <div class="containerGraf">
+        <div class="subtituloRecicla">
+            <h1>Dossiê Outliers: Eleições 2018 </h1>
+            <img class="recicla" src="img/chart.png" alt="símbolo da reciclagem">
+        </div>
+
+        <h3> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis accusamus iure totam officiis, ex dolore
+            asperiores accusantium nihil ad saepe iste est recusandae nostrum illo debitis voluptatibus aliquid,
+            tenetur adipisci.</h3>
+
+        <!-- DASH1 -->
+        <div class="dashboard">
+            <div class="dashboard-card main">
+                <div class="dashboard-card-content">
+                    <table class="columns">
+                        <tr>
+                            <td>
+                                <div id="Pie_chart_div"></div>
+                            </td>
+                            <td>
+                                <div id="chart_div" style="width: 450px; height: 300px;"></div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="dashboard-card stat">
+                <div class="dashboard-card-content">
+                    <div class="ballGen">
+                        <h4>LGBTI</h4>
+                        <img src="img/mulheres_lgbt.jpeg" />
+                    </div>
+                    <h3>Representatividade na Amostra</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio repellat alias, fuga nobis autem
+                        eaque ex ut quasi maiores laborum aliquam illo sint.</p>
+                </div>
+            </div>
+            <div class="dashboard-card description">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Gênero</th>
+                            <th>Orientação Sexual</th>
+                            <th>Qnt</th>
+                            <th>%</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">Feminino</td>
+                            <td>Heterossexual</td>
+                            <td>4169</td>
+                            <td>95%</td>
+                        </tr>
+                        <tr>
+                            <td>Homossexual</td>
+                            <td>113</td>
+                            <td>3%</td>
+                        </tr>
+                        <tr>
+                            <td>Bissexual</td>
+                            <td>129</td>
+                            <td>3%</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Masculino</td>
+                            <td>Heterossexual</td>
+                            <td>3809</td>
+                            <td>94%</td>
+                        </tr>
+                        <tr>
+                            <td>Homossexual</td>
+                            <td>151</td>
+                            <td>4%</td>
+                        </tr>
+                        <tr>
+                            <td>Bissexual</td>
+                            <td>95</td>
+                            <td>2%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- DASH2 -->
+        <div id="dash2" class="dashboard">
+            <div class="dashboard-card main">
+                <div class="dashboard-card-content">
+                    <div id="chart_stacked" style="width: 900px; height: 340px;"></div>
+                </div>
+            </div>
+
+            <div class="dashboard-card stat">
+                <div class="dashboard-card-content">
+                    <div class="ballGen">
+                        <h4>LGBTI</h4>
+                        <img src="img/mapaBrasil.jpeg" />
+                    </div>
+                    <h3>Onde votam?</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio repellat alias, fuga nobis autem
+                        eaque ex ut quasi maiores laborum aliquam illo sint, dolore eligendi assumenda nihil expedita
+                        facere et!</p>
+                </div>
+            </div>
+
+
+            <div class="dashboard-card description">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Gênero</th>
+                            <th>Orientação Sexual</th>
+                            <th>Qnt</th>
+                            <th>%</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">Feminino</td>
+                            <td>Heterossexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Homossexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Bissexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Masculino</td>
+                            <td>Heterossexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Homossexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Bissexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- DASH3 -->
+        <div id="dash3" class="dashboard">
+            <div class="dashboard-card main">
+                <div class="dashboard-card-content">
+                    <table class="columns">
+                        <tr>
+                            <td>
+
+                                <div id="donutchart2" style="width: 420px; height: 300px;"></div>
+                            </td>
+                            <td>
+                                <div id="donutchart" style="width: 420px; height: 300px;"></div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="dashboard-card stat">
+                <div class="dashboard-card-content">
+                    <div class="ballGen">
+                        <h4>LGBTI</h4>
+                        <img src="img/urna-eletrônica-lgbt.jpeg" />
+                    </div>
+                    <h3>Como votam</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio repellat alias, fuga nobis autem
+                        eaque ex ut quasi maiores laborum aliquam illo sint, dolore eligendi assumenda nihil expedita
+                        facere et!</p>
+                </div>
+            </div>
+
+
+            <div class="dashboard-card description">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Gênero</th>
+                            <th>Orientação Sexual</th>
+                            <th>Qnt</th>
+                            <th>%</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">Feminino</td>
+                            <td>Heterossexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Homossexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Bissexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Masculino</td>
+                            <td>Heterossexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Homossexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Bissexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- DASH4 -->
+        <div id="dash4" class="dashboard">
+            <div class="dashboard-card main">
+                <div class="dashboard-card-content">
+                    <div id="series_chart_div" style="width: 900px; height: 305px;"></div>
+                </div>
+            </div>
+
+            <div class="dashboard-card stat">
+                <div class="dashboard-card-content">
+                    <div class="ballGen">
+                        <h4>LGBTI</h4>
+                        <img src="img/candidato.jpeg" />
+                    </div>
+                    <h3>Em quem votam</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio repellat alias, fuga nobis autem
+                        eaque ex ut quasi maiores laborum aliquam illo sint, dolore eligendi assumenda nihil expedita
+                        facere et!</p>
+                </div>
+            </div>
+
+
+            <div class="dashboard-card description">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Gênero</th>
+                            <th>Orientação Sexual</th>
+                            <th>Qnt</th>
+                            <th>%</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">Feminino</td>
+                            <td>Heterossexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Homossexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Bissexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Masculino</td>
+                            <td>Heterossexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Homossexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Bissexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- DASH5 -->
+        <div id="dash5" class="dashboard">
+            <div class="dashboard-card main">
+                <div class="dashboard-card-content">
+                    <table class="columns">
+                        <tr>
+                            <td>
+
+                                <div id="donut_single" style="width: 420px; height: 300px;"></div>
+                            </td>
+                            <td>
+                                <div id="chart_div_combo" style="width: 450px; height: 300px;"></div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="dashboard-card stat">
+                <div class="dashboard-card-content">
+                    <div class="ballGera">
+                        <h4>Gerações</h4>
+                        <img src="img/homoafetivo.jpeg" />
+                    </div>
+                    <h3>O que pensam</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio repellat alias, fuga nobis autem
+                        eaque ex ut quasi maiores laborum aliquam illo sint, dolore eligendi assumenda nihil expedita
+                        facere et!</p>
+                </div>
+            </div>
+
+
+            <div class="dashboard-card description">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Gênero</th>
+                            <th>Orientação Sexual</th>
+                            <th>Qnt</th>
+                            <th>%</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">Feminino</td>
+                            <td>Heterossexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Homossexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Bissexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Masculino</td>
+                            <td>Heterossexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Homossexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Bissexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- DASH6 -->
+        <div id="dash6" class="dashboard">
+            <div class="dashboard-card main">
+                <div class="dashboard-card-content">
+                    <div id="series_chart_div" style="width: 900px; height: 340px;"></div>
+                </div>
+            </div>
+
+            <div class="dashboard-card stat">
+                <div class="dashboard-card-content">
+                    <div class="ballGera">
+                        <h4>Gerações</h4>
+                        <img src="img/candidato.jpeg" />
+                    </div>
+                    <h3>Quem escolhem</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio repellat alias, fuga nobis autem
+                        eaque ex ut quasi maiores laborum aliquam illo sint, dolore eligendi assumenda nihil expedita
+                        facere et!</p>
+                </div>
+            </div>
+
+
+            <div class="dashboard-card description">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Gênero</th>
+                            <th>Orientação Sexual</th>
+                            <th>Qnt</th>
+                            <th>%</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">Feminino</td>
+                            <td>Heterossexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Homossexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Bissexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Masculino</td>
+                            <td>Heterossexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Homossexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Bissexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- DASH7 -->
+        <div id="dash7" class="dashboard">
+            <div class="dashboard-card main">
+                <div class="dashboard-card-content">
+                    <table class="columns">
+                        <tr>
+                            <td>
+
+                                <div id="donut_single" style="width: 420px; height: 300px;"></div>
+                            </td>
+                            <td>
+                                <div id="chart_div_combo" style="width: 450px; height: 300px;"></div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="dashboard-card stat">
+                <div class="dashboard-card-content">
+                    <div class="ballGera">
+                        <h4>Gerações</h4>
+                        <img src="img/rejection.jpeg" />
+                    </div>
+                    <h3>Quem rejeitam</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio repellat alias, fuga nobis autem
+                        eaque ex ut quasi maiores laborum aliquam illo sint, dolore eligendi assumenda nihil expedita
+                        facere et!</p>
+                </div>
+            </div>
+
+
+            <div class="dashboard-card description">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Gênero</th>
+                            <th>Orientação Sexual</th>
+                            <th>Qnt</th>
+                            <th>%</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">Feminino</td>
+                            <td>Heterossexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Homossexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Bissexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Masculino</td>
+                            <td>Heterossexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Homossexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Bissexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- DASH8 -->
+        <div id="dash8" class="dashboard">
+            <div class="dashboard-card main">
+                <div class="dashboard-card-content">
+                    <div id="series_chart_div" style="width: 900px; height: 340px;"></div>
+                </div>
+            </div>
+
+            <div class="dashboard-card stat">
+                <div class="dashboard-card-content">
+                    <div class="ballRenda">
+                        <h4>Renda</h4>
+                        <img src="img/distincao.jpeg" />
+                    </div>
+                    <h3>O que distingue</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio repellat alias, fuga nobis autem
+                        eaque ex ut quasi maiores laborum aliquam illo sint, dolore eligendi assumenda nihil expedita
+                        facere et!</p>
+                </div>
+            </div>
+
+
+            <div class="dashboard-card description">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Gênero</th>
+                            <th>Orientação Sexual</th>
+                            <th>Qnt</th>
+                            <th>%</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">Feminino</td>
+                            <td>Heterossexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Homossexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Bissexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Masculino</td>
+                            <td>Heterossexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Homossexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Bissexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- DASH9 -->
+        <div id="dash9" class="dashboard">
+            <div class="dashboard-card main">
+                <div class="dashboard-card-content">
+                    <table class="columns">
+                        <tr>
+                            <td>
+                                <div id="Pie_chart_div"></div>
+                            </td>
+                            <td>
+                                <div id="chart_div" style="width: 450px; height: 300px;"></div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="dashboard-card stat">
+                <div class="dashboard-card-content">
+                    <div class="ballRenda">
+                        <h4>Renda</h4>
+                        <img src="img/alcance.jpeg" />
+                    </div>
+                    <h3>Qual o alcance</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio repellat alias, fuga nobis autem
+                        eaque ex ut quasi maiores laborum aliquam illo sint, dolore eligendi assumenda nihil expedita
+                        facere et!</p>
+                </div>
+            </div>
+            <div class="dashboard-card description">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Gênero</th>
+                            <th>Orientação Sexual</th>
+                            <th>Qnt</th>
+                            <th>%</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">Feminino</td>
+                            <td>Heterossexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Homossexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Bissexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Masculino</td>
+                            <td>Heterossexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Homossexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Bissexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- DASH10 -->
+        <div id="dash10" class="dashboard">
+            <div class="dashboard-card main">
+                <div class="dashboard-card-content">
+                    <div id="series_chart_div" style="width: 900px; height: 340px;"></div>
+                </div>
+            </div>
+
+            <div class="dashboard-card stat">
+                <div class="dashboard-card-content">
+                    <div class="ballRenda">
+                        <h4>Renda</h4>
+                        <img src="img/piramide.jpeg" />
+                    </div>
+                    <h3>Quem concentra</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio repellat alias, fuga nobis autem
+                        eaque ex ut quasi maiores laborum aliquam illo sint, dolore eligendi assumenda nihil expedita
+                        facere et!</p>
+                </div>
+            </div>
+
+
+            <div class="dashboard-card description">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Gênero</th>
+                            <th>Orientação Sexual</th>
+                            <th>Qnt</th>
+                            <th>%</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">Feminino</td>
+                            <td>Heterossexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Homossexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Bissexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Masculino</td>
+                            <td>Heterossexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Homossexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Bissexual</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <footer>
+        <div class="logoMsg">
+            <img src="img/Logo.png" alt="logo" />
+            <p>Plataforma de coleta e<br> modelagem de pontos fora da curva. </p>
+        </div>
+
+        <div class="contato">
+
+            <p>Sobre</p>
+            <p>Apoie a iniciativa</p>
+            <p><strong>Assine para receber novidades:</strong></p>
+            <form action="#" method="POST">
+                <input type="text" placeholder="Seu e-mail">
+                <input class="btn btn-primary btn-lg" type="submit" value="enviar">
+            </form>
+        </div>
+
+        <div class="social">
+            <a href="#" target="blank_"><img src="img/logo_face.png" alt="logo_face"></a>
+            <a href="#" target="blank_"><img src="img/logo_twitter.png" alt="logo_twitter"></a>
+        </div>
+
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+
+
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
